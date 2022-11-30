@@ -59,11 +59,11 @@
 		C1996F042935CA710093CE03 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C1996F062935CF650093CE03 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C1996F0829369FCE0093CE03 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		C1996F0A2936A4CF0093CE03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = TwitterClone/API/User.swift; sourceTree = SOURCE_ROOT; };
+		C1996F0A2936A4CF0093CE03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = TwitterClone/Model/User.swift; sourceTree = SOURCE_ROOT; };
 		C1996F0C2936FD350093CE03 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
 		C1996F0E293706360093CE03 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
 		C1996F102937088E0093CE03 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
-		C1996F1229370AB70093CE03 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = TwitterClone/API/Tweet.swift; sourceTree = SOURCE_ROOT; };
+		C1996F1229370AB70093CE03 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = TwitterClone/Model/Tweet.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1117FBF293809CD00EDBA05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1996F1229370AB70093CE03 /* Tweet.swift */,
+				C1996F0A2936A4CF0093CE03 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C1996EC029354A1E0093CE03 = {
 			isa = PBXGroup;
 			children = (
@@ -100,10 +109,10 @@
 		C1996ECB29354A1E0093CE03 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				C1117FBF293809CD00EDBA05 /* Model */,
 				C1996EE529354AC00093CE03 /* Utils */,
 				C1996EE429354ABD0093CE03 /* API */,
 				C1996EE329354AB70093CE03 /* Controllers */,
-				C1996EE229354AA00093CE03 /* Model */,
 				C1996EE129354A9F0093CE03 /* View */,
 				C1996EE029354A8F0093CE03 /* ViewModel */,
 				C1996ECC29354A1E0093CE03 /* AppDelegate.swift */,
@@ -131,16 +140,6 @@
 				C1117FBB2937111400EDBA05 /* TweetCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C1996EE229354AA00093CE03 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C1996F0A2936A4CF0093CE03 /* User.swift */,
-				C1996F1229370AB70093CE03 /* Tweet.swift */,
-			);
-			name = Model;
-			path = "New Group1/Model";
 			sourceTree = "<group>";
 		};
 		C1996EE329354AB70093CE03 /* Controllers */ = {
